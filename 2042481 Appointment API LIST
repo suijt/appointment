@@ -1,0 +1,16 @@
+Movie API
+-List
+GET : https://mi-linux.wlv.ac.uk/~2042481/doctor-appointment/appointment
+GET : https://mi-linux.wlv.ac.uk/~2042481/doctor-appointment/appointment/{date}
+
+-Create
+POST : https://mi-linux.wlv.ac.uk/~2042481/doctor-appointment/appointment/create
+
+-Edit
+GET : https://mi-linux.wlv.ac.uk/~2042481/doctor-appointment/appointment/edit/{id}
+POST : https://mi-linux.wlv.ac.uk/~2042481/doctor-appointment/appointment/update/{id}
+
+-Delete
+GET: https://mi-linux.wlv.ac.uk/~2042481/doctor-appointment/appointment/delete/{id}
+
+

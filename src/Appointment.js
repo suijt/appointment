@@ -16,7 +16,7 @@ class Appointment extends Component {
   formSubmit(e) {
     e.preventDefault();
 
-    fetch('http://localhost/UK/doctorApi/appointment/create/', {
+    fetch('https://mi-linux.wlv.ac.uk/~2042481/doctor-appointment/appointment/create/', {
       method: 'POST',
       body: JSON.stringify({
         first_name: this.state.first_name,

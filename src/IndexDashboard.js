@@ -10,7 +10,7 @@ class IndexDashboard extends Component {
 	}
 	
 	componentDidMount() {
-		fetch('http://localhost/UK/doctorApi/appointment/')
+		fetch('https://mi-linux.wlv.ac.uk/~2042481/doctor-appointment/appointment/')
 			.then(response => {
 				return response.json();
 			}).then(result => {
@@ -22,12 +22,12 @@ class IndexDashboard extends Component {
 
 	deleteAppointment(id) {
 		if(window.confirm("Are you sure want to delete?")) {
-			fetch('http://localhost/UK/doctorApi/appointment/delete/' + id, {
+			fetch('https://mi-linux.wlv.ac.uk/~2042481/doctor-appointment/appointment/delete/' + id, {
 				method : 'GET'
 			}).then(response => { 
 					if(response.status === 200) {
 						alert("Appointment deleted successfully");
-						fetch('http://localhost/UK/doctorApi/appointment/')
+						fetch('https://mi-linux.wlv.ac.uk/~2042481/doctor-appointment/appointment/')
 						.then(response => {
 							return response.json();
 						}).then(result => {
@@ -41,7 +41,7 @@ class IndexDashboard extends Component {
 	}
 
   getBydate(date){
-    fetch('http://localhost/UK/doctorApi/appointment/'+date.target.value,{
+    fetch('https://mi-linux.wlv.ac.uk/~2042481/doctor-appointment/appointment/'+date.target.value,{
       method : 'GET'
     })
     .then(response => {

@@ -14,7 +14,7 @@ class EditAppointment extends Component {
     this.setState(state);
   }
   componentDidMount() {
-    fetch('http://localhost/UK/doctorApi/appointment/edit/' + this.props.match.params.id)
+    fetch('https://mi-linux.wlv.ac.uk/~2042481/doctor-appointment/appointment/edit/' + this.props.match.params.id)
       .then(response => {
         return response.json();
       }).then(result => {
@@ -36,7 +36,7 @@ class EditAppointment extends Component {
   formSubmit(e) {
     e.preventDefault();
 
-    fetch('http://localhost/UK/doctorApi/appointment/update/'+ this.props.match.params.id, {
+    fetch('https://mi-linux.wlv.ac.uk/~2042481/doctor-appointment/appointment/update/'+ this.props.match.params.id, {
       method: 'POST',
       body: JSON.stringify({
         first_name: this.state.first_name,
